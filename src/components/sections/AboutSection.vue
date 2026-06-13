@@ -1,43 +1,47 @@
-
+<script setup lang="ts">
+import BaseCard from '../ui/BaseCard.vue'
+</script>
 
 <template>
-   <div class="about-section"  id="about">
-    <div class="about-section__container">
-        <span class="about-section__title">About Nexora</span>
-        <h1 class="about-section__heading">A studio of builders obsessed with shipping great software.</h1>
-        <p class="about-section__description">We exist to help ambitious teams turn ideas into resilient products. Our mission is simple: pair world-class engineering and design with measurable business outcomes.</p>
-        <p cl>From Series A startups to Fortune 500s, we've partnered with teams across fintech, healthcare, logistics, and SaaS to deliver software that scales.</p>
+  <section
+    id="about"
+    class="grid grid-cols-1 lg:grid-cols-2 gap-12 p-6"
+  >
+    <div>
+      <span class="font-bold text-sky-500">
+        About Nexora
+      </span>
+
+      <h2 class="text-4xl font-semibold max-w-xl mt-3">
+        Full-stack capabilities, one partner.
+      </h2>
+
+      <p class="text-slate-500 max-w-md mt-4">
+        From product strategy to deployment — our cross-functional teams ship
+        the work that moves your roadmap forward.
+      </p>
     </div>
-    <div class="about-section__cards">
-    <div class="about-card">
-  <h3>Founded</h3>  
-  <p>2018</p>
-      
+
+    <div class="grid grid-cols-2 gap-4">
+      <BaseCard>
+        <p class="text-4xl font-bold">2018</p>
+        <p class="text-slate-500 mt-2">Founded</p>
+      </BaseCard>
+
+      <BaseCard>
+        <p class="text-4xl font-bold">120+</p>
+        <p class="text-slate-500 mt-2">Clients</p>
+      </BaseCard>
+
+      <BaseCard>
+        <p class="text-4xl font-bold">300+</p>
+        <p class="text-slate-500 mt-2">Projects</p>
+      </BaseCard>
+
+      <BaseCard>
+        <p class="text-4xl font-bold">40+</p>
+        <p class="text-slate-500 mt-2">Team</p>
+      </BaseCard>
     </div>
-    <div class="about-card">
-  <h3>Founded</h3>  
-  <p>2018</p>
-      
-    </div>
-    <div class="about-card">
-  <h3>Founded</h3>  
-  <p>2018</p>
-      
-    </div>
-    <div class="about-card">
-  <h3>Founded</h3>  
-  <p>2018</p>
-      
-    </div>
-    </div>
-  
-    </div>
-    </template>
-    <style lang="css" scoped>
-    .about-section{
-        background: #f8fafc;
-        display: flex;
-        justify-content:space-between;
-    }
-    
-    </style>
+  </section>
+</template>
