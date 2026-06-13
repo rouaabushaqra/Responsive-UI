@@ -1,0 +1,20 @@
+/* src/assets/styles/theme.css */
+
+@theme {
+  --color-primary: oklch(0.55 0.21 263);
+  --color-secondary: oklch(0.72 0.13 210);
+
+  --background-image-primary-gradient:
+    linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
+
+  --background-image-primary-gradient-hover:
+    linear-gradient(
+      135deg,
+      var(--color-secondary),
+      var(--color-primary)
+    );
+}

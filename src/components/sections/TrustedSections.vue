@@ -1,10 +1,18 @@
 <template>
-   <div class="home-section">
-        <h1 class="home-heading">Engineering <b class="highlight">digital products</b> that move companies forward.</h1>
-        <p class="home-paragraph">We design, build, and scale web, mobile, and cloud-native software for ambitious teams. From idea to launch — engineered with craft.</p>
-        <div class="buttons">
-            <button class="primary">Get in Touch</button>
-            <button class="secondary">View Portfolio</button>
-            </div>
+  <div class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center">
+        Trusted by teams at
+      </h2>
+
+      <div class="flex flex-col lg:flex-row flex-wrap justify-center gap-5 mt-5 m-auto text-center">
+        <h3 class="text-lg font-semibold">Google</h3>
+        <h3 class="text-lg font-semibold">Microsoft</h3>
+        <h3 class="text-lg font-semibold">Amazon</h3>
+        <h3 class="text-lg font-semibold">Facebook</h3>
+        <h3 class="text-lg font-semibold">Apple</h3>
+        <h3 class="text-lg font-semibold">Netflix</h3>
+      </div>
     </div>
+  </div>
 </template>

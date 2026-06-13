@@ -1,19 +1,14 @@
-// src/i18n/index.ts
-
 import { createI18n } from 'vue-i18n'
 
-const messages = {
-  en: {
-    welcome: 'Welcome'
-  },
-  ar: {
-    welcome: 'مرحباً'
-  }
-}
+import en from '../locales/en.json'
+import ar from '../locales/ar.json'
 
 export const i18n = createI18n({
   legacy: false,
   locale: 'en',
   fallbackLocale: 'en',
-  messages
+  messages: {
+    en,
+    ar,
+  },
 })
