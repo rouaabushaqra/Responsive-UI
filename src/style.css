@@ -1,31 +1,8 @@
-@import "tailwindcss";
-@import "./assets/styles/theme.css";
+@import 'tailwindcss';
+@import './assets/styles/theme.css';
 body {
   margin: 0;
-    font-family: "Open Sans", sans-serif;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-
-.highlight {
-  background: linear-gradient(135deg,
-      oklch(0.55 0.21 263),
-      oklch(0.72 0.13 210));
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-
-
-
-
-.navbar{
-  background: white;
-  margin: 20px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }

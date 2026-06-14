@@ -1,25 +1,28 @@
 <script setup lang="ts">
- import NavbarSection from '../components/sections/NavbarSection.vue'
+import NavbarSection from '../components/sections/NavbarSection.vue'
 // import HeroSection from '../components/sections/HeroSection.vue'
- import AboutSection from '../components/sections/AboutSection.vue'
-//  import WorkSection from '../components/sections/WorkSection.vue'
+import AboutSection from '../components/sections/AboutSection.vue'
+import WorkSection from '../components/sections/WorkSection.vue'
 // import PricingSection from '../components/sections/PricingSection.vue'
-// import ContactSection from '../components/sections/ContactSection.vue'
-//import FooterSection from '../components/sections/FooterSection.vue'
+import ContactSection from '../components/sections/ContactSection.vue'
+import FooterSection from '../components/sections/FooterSection.vue'
 import HomeSection from '../components/sections/HomeSection.vue'
 import TrustedSections from '../components/sections/TrustedSections.vue'
 </script>
 
 <template>
-    <div class="home-page">
-       <NavbarSection /> 
+  <main class="home-page">
+    <NavbarSection />
     <HomeSection />
     <TrustedSections />
-     <AboutSection />
+    <WorkSection />
+    <AboutSection />
+    <ContactSection />
+    <FooterSection />
     <!-- <WorkSection />
     <AboutSection />
     <FooterSection /> -->
-  <!-- <NavbarSection />
+    <!-- <NavbarSection />
   <HeroSection />
   <ServicesSection />
   <AboutSection />
@@ -27,5 +30,5 @@ import TrustedSections from '../components/sections/TrustedSections.vue'
   <PricingSection />
   <ContactSection />
   <FooterSection /> -->
-    </div>
+  </main>
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 interface Props {
-  title: string
-  description: string
+  title?: string
+  description?: string
   image?: string
   iconSize?: string
   cardClass?: string
@@ -9,25 +9,34 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
+  title: '',
+  description: '',
+  image: '',
   iconSize: '60px',
   cardClass: '',
-  iconClass: ''
+  iconClass: '',
 })
 </script>
 
 <template>
   <div
     :class="[
-      'bg-white border border-slate-200 rounded-3xl p-6 shadow-sm',
-      cardClass
+      'bg-white border border-slate-200 rounded-3xl p-6 shadow-sm transition-all duration-300',
+      cardClass,
     ]"
   >
     <slot>
-      <h3 class="text-xl font-bold">
+      <h3
+        v-if="title"
+        class="text-xl font-bold"
+      >
         {{ title }}
       </h3>
 
-      <p class="text-slate-500">
+      <p
+        v-if="description"
+        class="text-slate-500 mt-2"
+      >
         {{ description }}
       </p>
     </slot>

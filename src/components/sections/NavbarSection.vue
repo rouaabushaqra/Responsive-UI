@@ -8,16 +8,14 @@ const isOpen = ref(false)
   <nav class="px-6 py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <h1 class="text-2xl font-bold">
-        Nexora
-      </h1>
+      <h1 class="text-2xl font-bold">Nexora</h1>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center gap-6">
-        <RouterLink to="/#hero">Home</RouterLink>
-        <RouterLink to="/#about">About</RouterLink>
-        <RouterLink to="/#work">Work</RouterLink>
-        <RouterLink to="/#contact">Contact</RouterLink>
+        <RouterLink to="/#hero"> Home </RouterLink>
+        <RouterLink to="/#about"> About </RouterLink>
+        <RouterLink to="/#work"> Work </RouterLink>
+        <RouterLink to="/#contact"> Contact </RouterLink>
       </div>
 
       <!-- Desktop Button -->
@@ -28,10 +26,7 @@ const isOpen = ref(false)
       </button>
 
       <!-- Burger Button -->
-      <button
-        class="md:hidden"
-        @click="isOpen = !isOpen"
-      >
+      <button class="md:hidden" @click="isOpen = !isOpen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="w-7 h-7"
@@ -50,29 +45,16 @@ const isOpen = ref(false)
     </div>
 
     <!-- Mobile Menu -->
-    <div
-      v-if="isOpen"
-      class="md:hidden mt-4 flex flex-col gap-4"
-    >
-      <RouterLink to="/#hero" @click="isOpen = false">
-        Home
-      </RouterLink>
+    <div v-if="isOpen" class="md:hidden mt-4 flex flex-col gap-4">
+      <RouterLink to="/#hero" @click="isOpen = false"> Home </RouterLink>
 
-      <RouterLink to="/#about" @click="isOpen = false">
-        About
-      </RouterLink>
+      <RouterLink to="/#about" @click="isOpen = false"> About </RouterLink>
 
-      <RouterLink to="/#work" @click="isOpen = false">
-        Work
-      </RouterLink>
+      <RouterLink to="/#work" @click="isOpen = false"> Work </RouterLink>
 
-      <RouterLink to="/#contact" @click="isOpen = false">
-        Contact
-      </RouterLink>
+      <RouterLink to="/#contact" @click="isOpen = false"> Contact </RouterLink>
 
-      <button
-        class="bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-4 py-2 rounded-lg"
-      >
+      <button class="bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-4 py-2 rounded-lg">
         Sign In
       </button>
     </div>

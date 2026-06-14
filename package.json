@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "lint": "eslint src --ext .js,.ts,.vue",
+    "lint:fix": "eslint src --ext .js,.ts,.vue --fix",
+    "format": "prettier . --write",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,6 +23,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "@types/node": "^24.12.3",
     "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/eslint-config-typescript": "^14.8.0",
     "@vue/tsconfig": "^0.9.1",
     "eslint": "^9.39.4",
     "eslint-plugin-vue": "^10.9.2",
