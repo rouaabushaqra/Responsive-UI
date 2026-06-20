@@ -23,9 +23,9 @@ const cardClasses = computed(() => [
   <article :class="cardClasses" aria-label="Card">
     <header v-if="$slots.header || title">
       <slot name="header">
-        <h3 class="text-xl font-bold text-slate-900">
+        <h1 class="text-xl font-bold text-slate-900">
           {{ title }}
-        </h3>
+        </h1>
       </slot>
     </header>
 

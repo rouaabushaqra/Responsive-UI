@@ -3,9 +3,9 @@ import BaseCard from '../ui/BaseCard.vue'
 </script>
 
 <template>
-  <section id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-12 p-6">
+  <section id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-12 p-6 max-w-6xl mx-auto">
     <div>
-      <span class="font-bold text-sky-800"> About Nexora </span>
+      <span class="font-bold text-gradient"> About Nexora </span>
 
       <h2 class="text-4xl font-semibold max-w-xl mt-3">Full-stack capabilities, one partner.</h2>
 

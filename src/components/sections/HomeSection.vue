@@ -1,6 +1,7 @@
 <template>
-  <header class="bg-home p-5">
-    <h1
+  <header class="bg-home">
+   <div class="max-w-6xl mx-auto">
+     <h1
       class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[80px] leading-tight font-bold w-full md:w-4/5 lg:w-3/5 text-center mx-auto max-w-[800px]"
     >
       Engineering
@@ -27,5 +28,6 @@
         {{ $t('home.portfolio') }}
       </button>
     </div>
+   </div>
   </header>
 </template>

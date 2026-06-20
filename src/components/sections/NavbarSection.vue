@@ -6,7 +6,7 @@ const isOpen = ref(false)
 
 <template>
   <nav class="px-6 py-4">
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between max-w-6xl mx-auto">
       <!-- Logo -->
       <h1 class="text-2xl font-bold">Nexora</h1>
 

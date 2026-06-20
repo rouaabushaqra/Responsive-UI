@@ -37,9 +37,9 @@ const services = [
 
 <template>
   <section id="work" class="bg-slate-50 py-16">
-    <div class="container mx-auto px-5">
+    <div class="max-w-6xl mx-auto">
       <div>
-        <span class="text-[15px] font-bold text-blue-600"> What we do </span>
+        <span class="text-[15px] font-bold text-gradient"> What we do </span>
 
         <h1 class="mt-3 max-w-4xl text-4xl md:text-5xl font-bold text-slate-900">
           Full-stack capabilities, one partner.

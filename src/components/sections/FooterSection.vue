@@ -1,9 +1,9 @@
 <template>
   <footer class="footer text-white">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-6 max-w-6xl mx-auto">
       <div class="p-4">
         <div>
-          <h1>Nervo</h1>
+          <h1 class="text-gradient">Nervo</h1>
           <p>
             Nexora Engineering digital products that move companies forward. Based in San Francisco
             & Berlin.
