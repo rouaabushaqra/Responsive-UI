@@ -1,44 +1,44 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface Props {
   title?: string
   description?: string
-  image?: string
-  iconSize?: string
   cardClass?: string
-  iconClass?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   title: '',
   description: '',
-  image: '',
-  iconSize: '60px',
   cardClass: '',
-  iconClass: '',
 })
+
+const cardClasses = computed(() => [
+  'rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300',
+  props.cardClass,
+])
 </script>
 
 <template>
-  <div
-    :class="[
-      'bg-white border border-slate-200 rounded-3xl p-6 shadow-sm transition-all duration-300',
-      cardClass,
-    ]"
-  >
-    <slot>
-      <h3
-        v-if="title"
-        class="text-xl font-bold"
-      >
-        {{ title }}
-      </h3>
+  <article :class="cardClasses" aria-label="Card">
+    <header v-if="$slots.header || title">
+      <slot name="header">
+        <h3 class="text-xl font-bold text-slate-900">
+          {{ title }}
+        </h3>
+      </slot>
+    </header>
 
-      <p
-        v-if="description"
-        class="text-slate-500 mt-2"
-      >
-        {{ description }}
-      </p>
-    </slot>
-  </div>
+    <div class="mt-2">
+      <slot>
+        <p v-if="description" class="text-slate-500">
+          {{ description }}
+        </p>
+      </slot>
+    </div>
+
+    <footer v-if="$slots.footer" class="mt-4">
+      <slot name="footer" />
+    </footer>
+  </article>
 </template>
